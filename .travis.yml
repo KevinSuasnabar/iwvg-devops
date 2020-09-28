@@ -11,12 +11,12 @@ notifications:
   email:
     recipients:
       - xkevin_157@hotmail.com
-#install:
-  #- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-#script:
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  #script:
   #- mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=kevinsuasnabar -Dsonar.login=$SONAR
-#deploy:
- # provider: heroku
- # api_key: $HEROKU
- # on:
+  #deploy:
+  # provider: heroku
+  # api_key: $HEROKU
+  # on:
   #  branch: master
